@@ -2,6 +2,16 @@
 
 
 export var style = {
+    gridStyle: {
+        majorGridLine: {
+            stroke: "#cccccc",
+            strokeWidth: 1
+        },
+        minorGridLine: {
+            stroke: "#eaeaea",
+            strokeWidth: 1,
+        }
+    },
     roomOutline: {
         default: {
             stroke: "#000000",
@@ -31,8 +41,7 @@ export var style = {
             fill: "none",
             fillOpacity: 1
         }
-    },
-    doorStyle: {
+    },doorStyle: {
         door: {
             default: {
                 stroke: "#c1272d",
@@ -64,6 +73,40 @@ export var style = {
                 strokeDasharray: "0",
                 strokeLinecap: "round"
             }
+        },
+        doorStop: {
+            default: {
+                stroke: "#c1272d",
+                strokeWidth: 1,
+                fill: "none",
+                fillOpacity: 1
+            },
+            open :{
+                stroke: "#ff00ff",
+                strokeWidth: 1,
+                fill: "none",
+                fillOpacity: 1
+            }
+        }
+    },
+    furniture: {
+        bed: {
+            stroke: "black",
+            strokeWidth: 1,
+            fill: "none",
+            fillOpacity: 1
+        },
+        dresser: {
+            stroke: "grey",
+            strokeWidth: 1,
+            fill: "none",
+            fillOpacity: 1
+        },
+        nightTable: {
+            stroke: "grey",
+            strokeWidth: 1,
+            fill: "none",
+            fillOpacity: 1
         }
     }
 }
