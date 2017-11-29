@@ -1,6 +1,5 @@
 // Styles to be used in rendering our floorplans
 
-
 export var style = {
     gridStyle: {
         majorGridLine: {
@@ -17,8 +16,8 @@ export var style = {
             stroke: "#000000",
             strokeWidth: 8,
             fill: "#f4e4d7",
-            fillOpacity: 1
-        },
+            fillOpacity: .5
+        }
     },
     interiorWalls: {
         default: {
@@ -26,17 +25,18 @@ export var style = {
             strokeWidth: 8,
             fill: "#f4e4d7",
             fillOpacity: 1
-        },
+        }
     },
     windowStyle: {
         default: {
             stroke: "#f9f9f9",
             strokeWidth: 6,
             fill: "none",
-            fillOpacity: 1
+            fillOpacity: 1,
+            strokeLinecap: "round"
         },
         open: {
-            stroke: "yellow", // need hex?
+            stroke: "yellow",
             strokeWidth: 6,
             fill: "none",
             fillOpacity: 1
@@ -109,7 +109,7 @@ export var style = {
             fillOpacity: 1
         }
     }
-}
+};
 
 
 

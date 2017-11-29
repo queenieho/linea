@@ -132,7 +132,6 @@ export default class Floorplan {
 
         this.drawWindows(room.features.windows, style.windowStyle.default);
 
-        // console.log(style.doorStyle);
         this.drawDoors(room.features.doors, style.doorStyle);
 
         this.drawSlidingDoors(room.features.slidingDoors, style.doorStyle);
@@ -289,7 +288,6 @@ export default class Floorplan {
     }
 
     drawDoors(doors, doorStyle) {
-        console.log("here: " + doors + doorStyle);
         doors.forEach((door) => {
             this.drawDoor(door, doorStyle);
         });
